@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/alvobg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header nav .logo{
+    font-size: 35px;
+    color: #20c760a8;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+header nav .logo span{
+    color: #10884c;
+    text-decoration: underline;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 5px 7px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover{
+    color: #20c760a8
+}
+
+header nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav .icons i:hover {
+    color: #20c760a8;
+}
+
+header .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .main .main_content .main_text h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:relative;
+    top: 45px;
+    left: 5%;
+}
+
+header .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+}
+
+header .main .main_content .main_image img{
+    width: 1200px;
+    position: relative;
+    left: 10px;
+    top: 75px;
+}
+
+header .main .social_icon{
+    position:absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+
+header .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+header .main .social_icon i:hover{
+    color: #20c760a8
+}
+
+header .main .button{
+    position: absolute;
+    left: 6%;
+    padding: 8px 12px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #20c760a8, #10884c);
+}
+
+header .main .button a{
+    color: white;
+    text-decoration: none;
+}
+
+header .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+header .main .button:hover i{
+    transform: translateX(4px)
+}
+
+/*Why*/
+
+.why {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+}
+
+.why h2{
+    font-size: 60px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.why h2 span{
+    background: linear-gradient(to left, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 15px;
+}
+
+.why .why_main{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.why .why_main .why_image{
+    display: flex;
+    margin-top: 50px;
+    width: 40%;
+    padding-left: 50px;
+}
+    
+.why .why_main .why_image .why_small_image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+}
+
+.why .why_main .why_image .why_small_image img{
+    height: 100px;
+    margin: 5px 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #10884c, #20c760a8,);
+    display: block;
+    border-radius: 6px;
+    padding: 5px 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.why .why_main .why_image .why_small_image img:hover{
+    opacity: 1;
+}
+
+.why .why_main .image_container{
+    padding: 10px;
+    display: flex;
+}
+
+.why .why_main .image_container img{
+    border: 3px solid #10884c;
+    border-radius: 20px;
+    height:450px;
+    padding: 20px;
+    box-shadow: 0 0 8px #10884c;
+}
+
+.why .why_main .why_text{
+    margin-top: 45px;
+    width: 40%;
+}
+
+.why .why_main .why_text p{
+    background: linear-gradient(to left, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid #20c760a8;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #20c760a8;
+    height: 450px;
+}
+
+.why .why_btn{
+    color: black;
+    background: none;
+    position: relative;
+    top: 12%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    padding: 10px 25px;
+    border: 2px solid #20c760a8;
+    text-decoration: none;
+    box-shadow: 0 0 8px #20c760a8;
+    transition: 0.5s;
+}
+
+.why .why_btn:hover{
+    border: 2px solid transparent;
+    background: #20c760a8;
+    color: white;
+}
+
+/* How */
+
+.how {
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    background-image: url("/assets/alvobg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.how h2{
+    font-size:60px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.how h2 span{
+    background: linear-gradient(to left, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 15px;
+}
+
+/*MyGoals*/
+
+.mygoals {
+    background-image: url("/assets/goals1.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0; 
+    padding: 40px 0; 
+}
+
+.mygoals h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: prevattscriptssk;
+    font-size: 60px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.mygoals h2 span{
+    background: linear-gradient(to left, #20c760a8, #10884c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 15px;
+}
+
+.goals_form {
+    width: 100%;
+    height: 70vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.goals_form .left img{
+    width: 650px;
+    margin-left: 120px;
+}
+
+.goals_form .right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.goals_form .right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.goals_form .right form p{
+    margin-bottom: 100px;
+    font-weight: bold;
+    background-color: white;
+    color: #10884c;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: justify;
+    padding: 15px 30px;
+    border: 2px solid #36c76ee3;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #20c760a8;
+}
+.goals_form .right form p span{
+    text-decoration: underline;
+    color: #20c760a8;
+    text-shadow:  -2px -2px 4px rgba(0, 0, 0, 0.2);
+};
+
+.goals_form .right form label {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.goals_form .right button {
+    background-color: #20c760a8;
+    position: relative;
+    color: black;
+    padding: 10px 25px;
+    border: 2px solid #20c760a8;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #20c760a8;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.goals_form .right button:hover {
+    border: 2px solid transparent;
+    background: #168842a8;
+    color: white;
+}
+
+/*Footer*/
+
+footer{
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 40px;
+    justify-content: center;
+    font-size: small;
+}
