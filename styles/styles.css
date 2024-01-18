@@ -102,12 +102,17 @@ header .main .main_content .main_text h1 span{
 }
 
 header .main .main_content .main_text p{
-    width: 600px;
+    width: 500px;
     text-align: justify;
-    line-height: 21px;
+    line-height: 22px;
     position: relative;
     top: 85px;
-    left: 5%;
+    left: 20%;
+}
+header .main .main_content .main_text p strong{
+    background: #10884c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header .main .main_content .main_image img{
@@ -185,6 +190,17 @@ header .main .button:hover i{
     margin-right: 15px;
 }
 
+.why .why_paragraph{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 22px;
+    
+}
+
 .why .why_main{
     position: relative;
     top: 30%;
@@ -237,11 +253,24 @@ header .main .button:hover i{
     height:450px;
     padding: 20px;
     box-shadow: 0 0 8px #10884c;
+    width: 650px;
 }
 
 .why .why_main .why_text{
     margin-top: 45px;
     width: 40%;
+    padding: 25px 30px;
+    border: 2px solid #20c760a8;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #20c760a8;
+    height: 450px;
+}
+
+.why .why_main .why_text h3{
+    margin-bottom: 10px;
+    background: linear-gradient(to left, #10884c, #36c76ee3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .why .why_main .why_text p{
@@ -251,11 +280,6 @@ header .main .button:hover i{
     line-height: 22px;
     width: 650px;
     text-align: justify;
-    padding: 25px 30px;
-    border: 2px solid #20c760a8;
-    border-radius: 20px;
-    box-shadow: 0 0 8px #20c760a8;
-    height: 450px;
 }
 
 .why .why_btn{

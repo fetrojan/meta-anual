@@ -40,7 +40,15 @@
         <div class="main_content">
           <div class="main_text">
             <h1>Metas<br /><span>&emsp;Anuais</span></h1>
-            <p>Defina, acompanhe e compartilhe suas metas para o ano.</p>
+            <p>
+              Defina, acompanhe e compartilhe suas metas para o ano.<br />
+              Trace seus caminhos que conduzam ao seu
+              <strong>melhor eu</strong>. <br /><br />Cada
+              <strong>meta</strong> é uma jornada, uma oportunidade de
+              crescimento e descoberta. <br /><br />Ao definir metas anuais,
+              você está moldando seu próprio destino, construindo pontes entre
+              sonhos e realizações.
+            </p>
           </div>
           <div class="main_image">
             <img src="./assets/alvo.png" alt="alvo" />
@@ -62,14 +70,20 @@
 
     <div class="why" id="Why">
       <h2><span>Por que</span>&nbsp;definir metas anuais?</h2>
-
+      <div>
+        <p class="why_paragraph">
+          Estabelecer metas proporciona direção, motivação e um senso claro de
+          propósito. <br />Aqui estão alguns motivos pelos quais é benéfico
+          definir metas em algumas áreas:
+        </p>
+      </div>
       <div class="why_main">
         <div class="why_image">
           <div class="why_small_image">
-            <img src="./assets/correr.png" onclick="functio(this)" />
-            <img src="./assets/tocar.png" onclick="functio(this)" />
-            <img src="./assets/guardar.png" onclick="functio(this)" />
-            <img src="./assets/viajar.png" onclick="functio(this)" />
+            <img src="./assets/correr.png" onclick="changeContent(0)" />
+            <img src="./assets/tocar.png" onclick="changeContent(1)" />
+            <img src="./assets/guardar.png" onclick="changeContent(2)" />
+            <img src="./assets/viajar.png" onclick="changeContent(3)" />
           </div>
 
           <div class="image_container">
@@ -78,121 +92,139 @@
         </div>
 
         <div class="why_text">
-          <p>
-            Algumas palavras inspiradoras sobre a importância de definir metas
-            para o ano.balablabaklabaobalabalbalablablabalbalbalablabalbalalba
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbabalablabakl
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbabalablabakl
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbablablablabl
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbablabalblabl
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbabalablabaka
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbaaaaaaaaaaaa
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbaaaaaaaaaaaa
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbaaaaaaaaaaaa
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbaaaaaaaaaaaa
-            balablabaklabaobalabalbalablablabalbalbalablabalbalalbaaaaaaaaaaaa
+          <h3 id="mainTitle">Pessoal</h3>
+          <p id="mainText">
+            <strong>Desenvolvimento Pessoal:</strong><br />Metas pessoais podem
+            abranger áreas como aprendizado contínuo, desenvolvimento de
+            habilidades, leitura e expansão de conhecimentos, promovendo o
+            crescimento pessoal.<br /><br /><strong
+              >Frequência de Viagens:</strong
+            ><br />Estabelecer metas relacionadas à frequência de viagens, como
+            fazer uma viagem internacional a cada ano ou explorar uma nova
+            cidade a cada trimestre.<br /><br /><strong
+              >Relacionamentos e Comunicação:</strong
+            ><br />Estabelecer metas pessoais pode envolver a melhoria das
+            habilidades de comunicação, construção de relacionamentos
+            significativos e investimento em amizades e familiares.
           </p>
         </div>
       </div>
 
       <a href="#" class="why_btn">DEFINA SUAS METAS</a>
-
-      <script>
-        function functio(small) {
-          var full = document.getElementById("imagebox");
-          full.src = small.src;
-        }
-      </script>
     </div>
 
     <!-- How-->
 
     <div class="how" id="How">
-        <h2><span>Como</span> funciona?</h2>
-        <div class="how_main">
-            <div class="how_image">
+      <h2><span>Como</span> funciona?</h2>
+      <div class="how_main">
+        <div class="how_image"></div>
+        <div class="how_text">
+          <p>
+            Estabelecer metas é um passo crucial para o sucesso pessoal e
+            profissional. Aqui está um guia simples sobre como definir metas de
+            forma eficaz:
+          </p>
 
-            </div>
-            <div class="how_text">
-              <p>
-                  Estabelecer metas é um passo crucial para o sucesso pessoal e profissional. Aqui está um guia simples sobre como definir metas de forma eficaz:
-              </p>
-          
-              <h3>1. Reflexão</h3>
-              <p>
-                  Antes de começar a definir suas metas, reserve um tempo para refletir sobre seus valores, paixões e o que é verdadeiramente importante para você. 
-                  Isso ajudará a garantir que suas metas estejam alinhadas com sua visão de vida.
-              </p>
-          
-              <h3>2. Seja Específico</h3>
-              <p>
-                  Torne suas metas específicas e mensuráveis. Ao invés de "perder peso", por exemplo, defina uma meta como "perder 5 quilos em três meses". 
-                  Isso proporciona clareza e permite que você meça seu progresso de maneira tangível.
-              </p>
-          
-              <h3>3. Prazos Realistas</h3>
-              <p>
-                  Defina prazos realistas para suas metas. Isso cria um senso de urgência e motivação. 
-                  Certifique-se de que os prazos sejam desafiadores, mas alcançáveis com esforço e dedicação.
-              </p>
-          
-              <h3>4. Divida em Etapas</h3>
-              <p>
-                  Divida metas grandes em tarefas menores. Isso torna o processo mais gerenciável e permite que você acompanhe seu progresso de maneira mais eficaz. 
-                  Cada pequena conquista conta!
-              </p>
-          
-              <h3>5. Ajuste e Revise</h3>
-              <p>
-                  Esteja disposto a ajustar suas metas conforme necessário. 
-                  À medida que você progride, pode ser necessário reavaliar e adaptar suas metas com base nas circunstâncias e nas mudanças em suas prioridades.
-              </p>
-          
-              <p>
-                  Lembre-se, o ato de definir metas é uma jornada emocionante em direção ao seu melhor eu. 
-                  Celebre suas conquistas ao longo do caminho e mantenha o foco na visão que você tem para o seu futuro.
-              </p>
-          
-            </div>
-           
-            <a href="#" class="how_btn">Definir Metas</a>
+          <h3>1. Reflexão</h3>
+          <p>
+            Antes de começar a definir suas metas, reserve um tempo para
+            refletir sobre seus valores, paixões e o que é verdadeiramente
+            importante para você. Isso ajudará a garantir que suas metas estejam
+            alinhadas com sua visão de vida.
+          </p>
+
+          <h3>2. Seja Específico</h3>
+          <p>
+            Torne suas metas específicas e mensuráveis. Ao invés de "perder
+            peso", por exemplo, defina uma meta como "perder 5 quilos em três
+            meses". Isso proporciona clareza e permite que você meça seu
+            progresso de maneira tangível.
+          </p>
+
+          <h3>3. Prazos Realistas</h3>
+          <p>
+            Defina prazos realistas para suas metas. Isso cria um senso de
+            urgência e motivação. Certifique-se de que os prazos sejam
+            desafiadores, mas alcançáveis com esforço e dedicação.
+          </p>
+
+          <h3>4. Divida em Etapas</h3>
+          <p>
+            Divida metas grandes em tarefas menores. Isso torna o processo mais
+            gerenciável e permite que você acompanhe seu progresso de maneira
+            mais eficaz. Cada pequena conquista conta!
+          </p>
+
+          <h3>5. Ajuste e Revise</h3>
+          <p>
+            Esteja disposto a ajustar suas metas conforme necessário. À medida
+            que você progride, pode ser necessário reavaliar e adaptar suas
+            metas com base nas circunstâncias e nas mudanças em suas
+            prioridades.
+          </p>
+
+          <p>
+            Lembre-se, o ato de definir metas é uma jornada emocionante em
+            direção ao seu melhor eu. Celebre suas conquistas ao longo do
+            caminho e mantenha o foco na visão que você tem para o seu futuro.
+          </p>
         </div>
+
+        <a href="#" class="how_btn">Definir Metas</a>
+      </div>
     </div>
 
     <!--MyGoals-->
 
     <div class="mygoals" id="MyGoals">
-        <h2><span>Minhas</span>Metas</h2>
-        
-        <div class="goals_form">
-            <div class="left">
-                <img src="./assets/goals.png" alt="quadro-metas">
-            </div>
-            <div class="right">
-                <form action="#" method="post">
-                    <p>Preencha os campos abaixo para definir <span>suas metas</span> para este ano.</p>
-                    <label for="goalTitle">Título da Meta:</label>
-                    <input type="text" id="goalTitle" name="goalTitle" required>
+      <h2><span>Minhas</span>Metas</h2>
 
-                    <label for="goalDescription">Descrição:</label>
-                    <textarea id="goalDescription" name="goalDescription" rows="5" required></textarea>
-
-                    <label for="goalDate">Data de Conclusão:</label>
-                    <input type="date" id="goalDate" name="goalDate" required>
-
-                    <label for="goalCategory">Categoria:</label>
-                    <select id="goalCategory" name="goalCategory">
-                        <option value="saude">Saúde</option>
-                        <option value="carreira">Carreira</option>
-                        <option value="pessoal">Pessoal</option>
-                        <option value="financas">Finanças</option>
-                    </select>
-
-                    <button type="submit">Salvar Meta</button>
-                </form>
-            </div>
+      <div class="goals_form">
+        <div class="left">
+          <img src="./assets/goals.png" alt="quadro-metas" />
         </div>
+        <div class="right">
+          <form id="goalForm">
+            <p>
+              Preencha os campos abaixo para definir
+              <span>suas metas</span> para este ano.
+            </p>
+            <label for="goalTitle">Título da Meta:</label>
+            <input
+              type="text"
+              id="goalTitle"
+              name="goalTitle"
+              placeholder="Defina um nome para sua meta..."
+              required
+            />
+
+            <label for="goalDescription">Descrição:</label>
+            <textarea
+              id="goalDescription"
+              name="goalDescription"
+              rows="5"
+              placeholder="Em poucas palavras, descreva o objetivo desta meta..."
+              required
+            ></textarea>
+
+            <label for="goalDate">Data limite para a Conclusão:</label>
+            <input type="date" id="goalDate" name="goalDate" required />
+
+            <label for="goalCategory">Categoria:</label>
+            <select id="goalCategory" name="goalCategory">
+              <option value="saude">Saúde</option>
+              <option value="profissional">Profissional</option>
+              <option value="pessoal">Pessoal</option>
+              <option value="financas">Finanças</option>
+            </select>
+
+            <button type="submit">Salvar Meta</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <div id="metaCardsContainer" class="meta-cards-container"></div>
 
     <footer>
       <p>&copy; 2024 Metas Anuais</p>
