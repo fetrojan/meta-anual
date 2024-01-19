@@ -52,14 +52,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const goalDate = document.getElementById("goalDate").value;
     const goalCategory = document.getElementById("goalCategory").value;
 
+    //Categorias Icones
+    const categoryIcons = {
+      saude: "./assets/health.svg",
+      profissional: "./assets/work.svg",
+      pessoal: "./assets/personal.svg",
+      financas: "./assets/money.svg",
+    };
+
+    const categoryIcon = categoryIcons[goalCategory];
+
     // Criação do card da meta
     const metaCard = document.createElement("div");
     metaCard.classList.add("meta-card");
     metaCard.innerHTML = `
+            <img src="${categoryIcon}" class="category_icon" alt="icone-categoria">
             <h3>${goalTitle}</h3>
             <p>${goalDescription}</p>
             <p><strong>Data Limite:</strong> ${goalDate}</p>
-            <p><strong>Categoria:</strong> ${goalCategory}</p>
+            <p><strong>Categoria:</strong> ${
+              goalCategory.charAt(0).toUpperCase() +
+              document.getElementById("goalCategory").value.slice(1)
+            }</p>
         `;
 
     // Adiciona o card ao container
